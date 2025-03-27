@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome checker</title>
+    <style>
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+        input[type="text"]
+        {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button
+        {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result
+        {
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>Palindrome checker</h3>
+    <input type="text" placeholder="Enter a string" id="input">
+    <br>
+    <button onclick="isPalindrome()" id="button">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function isPalindrome() {
+        const string = document.getElementById('input');
+        const input = string.value;
+        const reverse = input.split('').reverse().join('');
+        if(input === reverse)
+        {
+            document.getElementById('result').innerHTML = "Palindrome";
+        }
+        else
+        {
+            document.getElementById('result').innerHTML = "Not Palindrome";
+        }
+    }
+    </script>
+</body>
+</html>
