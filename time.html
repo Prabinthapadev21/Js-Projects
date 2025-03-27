@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            background-color: #f7f0f0;
+        }
+        #time
+        {
+            height: 100px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: violet;
+            font-size: 50px;
+            font-weight: bold;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2>Date and Time</h2>
+    <h1 id="time"></h1>
+    <script>
+        function datetime()
+        {
+            const date = new Date();
+            const hours = date.getHours();
+            const minutes = date.getMinutes();
+            const seconds = date.getSeconds();
+            document.getElementById("time").innerHTML= hours+":"+minutes+":"+seconds;
+            setTimeout(datetime,1000);
+        }
+        datetime();
+    </script> -->
+    <!-- <input type="text" id="name" placeholder="Enter name">
+    <p id ="para"></p>
+    <br>
+    <button onclick="insertelement()">clickme</button>
+    <script>
+        function insertelement()
+        {
+           let value = document.getElementById("name").value;
+           document.getElementById("para").innerHTML="Hello"+value;
+        } -->
+
+        <!-- <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+
+        <script>
+            let para = document.getElementsByClassName("para");
+            for(let i =0;i<para.length;i++)
+            {
+                para[i].innerHTML="Hello Prabin";
+            }
+        </script> -->
+        <div id="hero"></div>
+
+        <script>
+            let div = "<a href='https://www.google.com'>Google</a>";
+            let value = document.getElementById("hero");
+            value.innerHTML=div;
+        </script>
+
+        <!-- id bata aauta heading -->
+        <!-- class bata aauta paragraph -->
+         <!-- innerhtml bata image halni -->
+         
+</body>
+</html>
