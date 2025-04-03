@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #show
+        {
+            background-color: aqua;
+            color: white;
+            border-radius: 10px;
+        }
+        #hide{
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+        }
+        #para
+        {
+            background-color: violet;
+            height: 100vh;
+            width: 300px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="show">Click to show</button>
+    <button id="hide">Click to hide</button>
+   <div id="para"></div>
+    <script>
+        let show = document.getElementById("show");
+        let hide = document.getElementById("hide");
+        show.addEventListener("click",function(){
+            document.getElementById("para").style.display = "block";
+            document.getElementById("para").style.transition ="5s"
+        })
+            document.getElementById("para").style.display = "none";
+            document.getElementById("para").style.transition = "5s";
+        })
+    </script>
+    <!-- wow js and swiper js -->
+</body>
+</html>
